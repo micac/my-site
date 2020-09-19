@@ -1,0 +1,204 @@
+body{
+  color:#545454;
+  background-color:#ffffff;
+  margin:0;
+  text-align:center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+hr {
+  width: 7%;
+  border-style: none none dotted;
+  border-width:thick;
+  color:grey;
+  margin:100px auto;
+}
+h1{
+  font-size:5.625rem; /* 100% -> 16px 90px/100x16* || 16px = 100% = 1em || -2em del body*/
+  margin:50px auto 0 auto;
+  color:#769fcd;
+  font-family: 'Sacramento', cursive;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.5rem;
+  color:#769fcd;
+}
+h3{
+  color:#b9d7ea;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  color:#769fcd;
+}
+.nav-top{
+    background-color:#d6e6f2;
+    position: fixed;
+    width:100%;
+    z-index:1000;
+    top: 0;
+    transition: top 0.3s; /* Transition effect when sliding down and up */
+}
+.nav-top ul {
+  list-style: none;
+}
+.nav-top a {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-top a:hover {
+  color: #769FCD;
+}
+.top-container {
+  background-color:#d6e6f2;
+  position: relative;
+  padding-top:100px;
+}
+.middle-container{
+  line-height: 2;
+  margin:100px 0;
+}
+.bottom-container{
+  background-color: #d6e6f2;
+  padding:40px;
+}
+.tower-image{
+  width:300px;
+}
+.sky-container{
+  position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1.875rem;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 24' width='420' height='24' preserveAspectRatio='none'%3E%3Cg fill='%23fff'%3E%3Ccircle cy='43' r='37'/%3E%3Ccircle cx='41' cy='37' r='25'/%3E%3Ccircle cx='86' cy='45' r='36'/%3E%3Ccircle cx='125' cy='30' r='25'/%3E%3Ccircle cx='158' cy='41' r='25'/%3E%3Ccircle cx='200' cy='45' r='36'/%3E%3Ccircle cx='244' cy='27' r='25'/%3E%3Ccircle cx='280' cy='44' r='36'/%3E%3Ccircle cx='330' cy='47' r='36'/%3E%3Ccircle cx='372' cy='40' r='25'/%3E%3Ccircle cx='420' cy='43' r='37'/%3E%3Cpath shape-rendering='crispEdges' d='M0 23h420v1H0z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: -60% bottom;
+    background-size: 32.8125rem;
+}
+.top-subtitle{
+  font-weight: normal;
+  color:#769fcd;
+}
+.top-cloud{
+  position: absolute;
+  right:100px;
+  top:50px;
+  height:20%;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+.bottom-cloud{
+  position:absolute;
+  left:100px;
+  bottom:300px;
+  height:20%;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+@media (max-width: 992px){
+  .bottom-cloud {
+    left:-5rem;
+  }
+  .top-cloud{
+    right:-5rem;
+  }
+}
+.profile, .contact-me{
+  width:50%;
+  margin:100px auto 100px auto;
+}
+.skills{
+  margin:100px auto 100px auto;
+}
+.skill-row{
+  width:50%;
+  margin: 50px auto 100px auto;
+  text-align: left;
+}
+.cx-img{
+    width:25%;
+    float:left;
+    margin-right:30px;
+}
+.computer-img{
+  width:25%;
+  float:right;
+  margin-left:30px;
+}
+.btn {
+  margin-top:20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px 30px;
+  background-color: #4283C0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #769FCD;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.footer-link{
+  color:#4283C0;
+  margin:20px;
+}
+.footer-link:hover{
+  color:#769FCD;
+}
+.copyright{
+  color:#769FCD;
+  font-size:.8rem;
+  margin:40px;
+}
+/********WORK PAGE********/
+.work-img{
+  width:25%;
+}
+#work.top-container{
+  height:500px;
+}
+#weather-app.portfolio{
+  background-color:#31355b;
+}
+#newsletter-app.portfolio{
+  background-color:#ed6663;
+}
+.portfolio-img img{
+  height:300px;
+  width:auto;
+  margin: 100px 0 0 0;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.portfolio-txt{
+  width: 50%;
+  margin: 50px auto 0 auto;
+  color:#ffffff;
+}
+.portfolio-txt h2, .portfolio-txt h3{
+  color:#ffffff;
+}
+.portfolio-txt .btn{
+  margin-bottom:50px;
+}
+#newsletter-app.portfolio .btn{
+  background-color:#31355b;
+}
+#newsletter-app.portfolio .btn:hover{
+  background-color:#424874;
+}
